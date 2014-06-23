@@ -1,0 +1,78 @@
+/*By Dealenx*/
+
+//Body
+body{
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #111;
+    font-size: 12px;
+    background: #ddd;
+}
+
+
+//Ссылка
+
+a {
+    color: #222222;
+    outline: none;
+}
+
+a:hover{
+    color: #444444;
+   }
+
+//Цвета
+@cb:#34495e;
+@cr:#b13a04;
+@cg:#588f27;
+@cy:#2c2834;
+@cd:#2e2f31;
+@cc:#bdc3c7;
+@cf:white;
+@n:none;
+@sol:solid;
+@a:#fff;
+//Border-radius
+.b-r (@radius) {
+  border-radius: @radius+0px;
+  -webkit-border-radius:@radius+0px;
+  -moz-border-radius: @radius+0px;
+  -ms-border-radius: @radius+0px;
+  -icab-border-radius:@radius+0px;
+   -o-border-radius:@radius+0px;
+}
+//Кнопки
+ .but-theme (@but-color) {background-color:@but-color;&:hover{background-color: @but-color+#222}&:active,&.active{background-color:@but-color+#111}}
+.but{border:0;background:@cd;color:white;font-size:18px;text-decoration:none;text-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;-webkit-transition:.25s;-moz-transition:.25s;-o-transition:.25s;transition:.25s;-webkit-backface-visibility:hidden;border-radius:3px;-webket-border-radius:3px;-o-border-radius:3px;-moz-border-radius:3px;padding-bottom:4px;padding-top:4px;padding-left:8px;padding-right:8px;margin-left:4px
+&:hover{background-color: @cd+#222;color:#fff;-webkit-transition:.25s;-moz-transition:.25s;-o-transition:.25s;transition:.25s;-webkit-backface-visibility:hidden}
+&:active,&.active{background-color: @cd+#111;color:rgba(255,255,255,0.75);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}
+}
+  .off{background-color: @cc;color:@cf}
+  .red {.but-theme(@cr);color:@cf;}
+  .blue {.but-theme(@cb);color:@cf;}
+  .og {.but-theme(@cy);color:@cf;}
+  .white {.but-theme(#dddddd);color:#111; 
+    &:active {color:#111;}
+  }
+
+
+.b-s (@b-s-colr,@b-s-px) {border: solid @b-s-px+0px #000+@b-s-colr;}
+
+.row{width:100%;*zoom:1;&:before,&:after{display:table;line-height:0;content:""} &:after{clear:both}}
+
+.span (@span){width:@span*64px;}
+
+.wrap{
+  position: relative;
+  width: 1024px;
+  margin:100px auto 0;
+  background: #fff;
+  .b-r(4);
+  padding-bottom:10px;
+
+  .start {
+    font-size: 32px;
+    color:#333; 
+    padding: 20px;
+  }
+}
+
